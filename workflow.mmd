@@ -1,0 +1,118 @@
+%% Data Review Tool v3.1 — End-to-end Workflow
+%% Paste into https://mermaid.live or any Mermaid renderer.
+
+flowchart TD
+    %% ─────────────── INPUTS ───────────────
+    subgraph INPUTS["Inputs (Excel files)"]
+        A1[actual.xlsx<br/>your file to review]
+        A2[db1.xlsx<br/>source DB dump 1]
+        A3[db2.xlsx<br/>source DB dump 2]
+        A4[optional<br/>fields_config.json]
+    end
+
+    %% ─────────────── STAGE 0: DISCOVERY ───────────────
+    subgraph DISCOVER["discover_columns.py (optional pre-step)"]
+        D1[Read ONLY header rows<br/>no data loaded]
+        D2[Fuzzy-group similar column names<br/>firstname1.1, first_name -&gt; firstname]
+        D3[Match each actual field<br/>to DB1 + DB2 columns by similarity]
+        D4[Auto-detect norm type<br/>phone/email/url/date/number/text]
+        D5[Write fields_config.json<br/>user can edit mappings]
+        D1 --> D2 --> D3 --> D4 --> D5
+    end
+
+    A1 -.optional.-> D1
+    A2 -.optional.-> D1
+    A3 -.optional.-> D1
+    D5 -.feeds.-> A4
+
+    %% ─────────────── STAGE 1: STARTUP ───────────────
+    subgraph BOOT["review.py — startup"]
+        B1[argparse CLI<br/>--actual --db1 --db2<br/>--fields --config --output --workers]
+        B2[Security guard<br/>block requests/urllib/boto3/etc.<br/>abort if loaded]
+        B1 --> B2
+    end
+
+    A1 --> B1
+    A2 --> B1
+    A3 --> B1
+    A4 --> B1
+
+    %% ─────────────── STAGE 2: LOAD ───────────────
+    subgraph LOAD["[1] Load Excel files in parallel"]
+        L1[ThreadPoolExecutor — 3 threads]
+        L2[load_excel actual<br/>calamine -&gt; openpyxl fallback]
+        L3[load_excel db1]
+        L4[load_excel db2]
+        L5[dtype=str, fillna empty<br/>strip column names]
+        L1 --> L2
+        L1 --> L3
+        L1 --> L4
+        L2 --> L5
+        L3 --> L5
+        L4 --> L5
+    end
+    B2 --> L1
+
+    %% ─────────────── STAGE 3: ID DETECTION ───────────────
+    subgraph IDS["[2] Detect ID columns (fuzzy match)"]
+        I1[actual_db1_id in actual.xlsx]
+        I2[actual_db2_id in actual.xlsx]
+        I3[db1_id_col in db1.xlsx]
+        I4[db2_id_col in db2.xlsx]
+    end
+    L5 --> I1 --> I2 --> I3 --> I4
+
+    %% ─────────────── STAGE 4: PLAN ───────────────
+    subgraph PLAN["[3] Build field plan"]
+        P1{Config provided?}
+        P2[Manual plan from config<br/>respect overrides]
+        P3[Auto plan: group_variants on actual cols<br/>fuzzy match to db1/db2 cols<br/>detect_norm_type per col]
+        P4[List of field entries:<br/>canonical, actual_col,<br/>db1_cols, db2_cols, norm_type]
+        P1 -- yes --> P2 --> P4
+        P1 -- no --> P3 --> P4
+    end
+    I4 --> P1
+
+    %% ─────────────── STAGE 5: COMPUTE ───────────────
+    subgraph COMPUTE["[4] compute_review — type-aware XLOOKUP"]
+        C1[Pre-strip ID lookup columns once]
+        C2[Per-field worker<br/>ThreadPoolExecutor]
+        C3[normalize_series actual_vals<br/>by norm_type]
+        C4[xlookup actual_id -&gt; db value<br/>cached dict per db_col]
+        C5[normalize_series db values]
+        C6[Compare normalized actual vs db<br/>per db column variant]
+        C7[Per-row review<br/>TRUE / FALSE / MISSING]
+        C8[Consolidated review across<br/>db1 variants and db2 variants<br/>any-match logic]
+        C9[Row color<br/>GREEN all match / YELLOW partial / RED none]
+        C10[Per-field overall_pct]
+        C1 --> C2 --> C3 --> C4 --> C5 --> C6 --> C7 --> C8 --> C9 --> C10
+    end
+    P4 --> C1
+
+    %% ─────────────── STAGE 6: WRITE ───────────────
+    subgraph WRITE["[5] write_output — openpyxl write_only Workbook"]
+        W1[Sheet 1: Review<br/>ID cols + per-field block<br/>actual / db1 vals / db2 vals /<br/>db1 review / db2 review<br/>colored cells]
+        W2[Sheet 2: Summary<br/>per-field GREEN/YELLOW/RED counts<br/>overall match pct]
+        W3[Sheet 3: Field Audit<br/>each actual-to-db column mapping<br/>output column letters<br/>matched/mismatch/missing counts]
+        W4[Parallel row build<br/>ThreadPoolExecutor chunks]
+        W5[wb.save output.xlsx]
+        W1 --> W2 --> W3 --> W4 --> W5
+    end
+    C10 --> W1
+
+    %% ─────────────── STAGE 7: DONE ───────────────
+    subgraph DONE["Final"]
+        F1[Print per-field summary table<br/>field / type / db1 cnt / db2 cnt / match pct]
+        F2[(review_output_TIMESTAMP.xlsx)]
+    end
+    W5 --> F1 --> F2
+
+    %% ─────────────── STYLES ───────────────
+    classDef input fill:#E8F1FB,stroke:#1F4E79,color:#1F4E79;
+    classDef stage fill:#FFF7E6,stroke:#7B3F00,color:#7B3F00;
+    classDef compute fill:#EFE6F7,stroke:#4A235A,color:#4A235A;
+    classDef out fill:#E8F5E9,stroke:#375623,color:#375623;
+    class A1,A2,A3,A4 input;
+    class B1,B2,L1,L2,L3,L4,L5,I1,I2,I3,I4,P1,P2,P3,P4 stage;
+    class C1,C2,C3,C4,C5,C6,C7,C8,C9,C10 compute;
+    class W1,W2,W3,W4,W5,F1,F2 out;

@@ -1,0 +1,6 @@
+pandas
+numpy
+python-calamine
+openpyxl
+phonenumbers
+rapidfuzz

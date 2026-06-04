@@ -1,0 +1,20 @@
+{
+  "description": "Columns listed here are ALWAYS marked GREEN in the review output. No DB lookup, no fuzzy match, no validation is performed. Use the exact actual-file column header (e.g. 'Account_Owner'). Canonical field names from fields_config.json (e.g. 'account owner') are also accepted and expand to all their actual_cols.",
+  "columns": [
+    "Permanent_Verification_Source",
+    "Personal_Email_Verification_Source",
+    "Personal_Email_Verification_Source",
+    "Secondary_Email_Verification_Source",
+    "Work_Email_Verification_Source",
+    "IITB_Email_Verification_Source",
+    "Primary_Phone_Verification_Source",
+    "Secondary_Phone_Verification_Source",
+    "Work_Phone_Verification_Source",
+    "Affiliations",
+    "Chapter_Region_Admin",
+    "Chapter_Committee_Member",
+    "Major_Investments",
+    "Major_Donations",
+    "Angel_Investments"
+  ]
+}

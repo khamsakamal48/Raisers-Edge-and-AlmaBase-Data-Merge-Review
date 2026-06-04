@@ -1,0 +1,2804 @@
+{
+  "fuzzy_threshold": 0.8,
+  "generated": "2026-05-19 16:53:23",
+  "actual_file": "actual_data.xlsx",
+  "db1_file": "db1_dump.xlsx",
+  "db2_file": "db2_dump.xlsx",
+  "fields": [
+    {
+      "canonical": "account owner",
+      "norm_type": "text",
+      "actual_cols": [
+        "Account_Owner"
+      ],
+      "db1_cols": [
+        "Account Owner"
+      ],
+      "db2_cols": [],
+      "db1_scores": {
+        "Account Owner": 1.0
+      },
+      "db2_scores": {},
+      "note": ""
+    },
+    {
+      "canonical": "additional information",
+      "norm_type": "text",
+      "actual_cols": [
+        "Additional_Information"
+      ],
+      "db1_cols": ["Additional information"],
+      "db2_cols": ["Introduction"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "mapnually mapped  "
+    },
+    {
+      "canonical": "affiliations",
+      "norm_type": "text",
+      "actual_cols": [
+        "Affiliations"
+      ],
+      "db1_cols": [],
+      "db2_cols": [
+        "Affiliation (1)",
+        "Affiliation (2)",
+        "Affiliation (3)",
+        "Affiliation (4)",
+        "Affiliation (5)"
+      ],
+      "db1_scores": {},
+      "db2_scores": {
+        "Affiliation (1)": 0.815,
+        "Affiliation (2)": 0.815,
+        "Affiliation (3)": 0.815,
+        "Affiliation (4)": 0.815,
+        "Affiliation (5)": 0.815
+      },
+      "note": ""
+    },
+    {
+      "canonical": "allow login email",
+      "norm_type": "email",
+      "actual_cols": [
+        "Allow_Login_Email"
+      ],
+      "db1_cols": [],
+      "db2_cols": [],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": ""
+    },
+    {
+      "canonical": "angel investments",
+      "norm_type": "text",
+      "actual_cols": [
+        "Angel_Investments"
+      ],
+      "db1_cols": [
+        "Angel Investments"
+      ],
+      "db2_cols": [],
+      "db1_scores": {
+        "Angel Investments": 1.0
+      },
+      "db2_scores": {},
+      "note": ""
+    },
+    {
+      "canonical": "award name",
+      "norm_type": "text",
+      "actual_cols": [
+        "Award_Name_1",
+        "Award_Name_2",
+        "Award_Name_3",
+        "Award_Name_4",
+        "Award_Name_5",
+        "Award_Name_6",
+        "Award_Name_7",
+        "Award_Name_8",
+        "Award_Name_9",
+        "Award_Name_10"
+      ],
+      "db1_cols": ["Award(1)","Award(2)","Award(3)","Award(4)","Award(5)"],
+      "db2_cols": [],
+      "db1_scores": {"Award(1)":0.815,"Award(2)":0.815,"Award(3)":0.815,"Award(4)":0.815,"Award(5)":0.815},
+      "db2_scores": {},
+      "note": "db1 manually mapped"
+    },
+    {
+      "canonical": "award other",
+      "norm_type": "text",
+      "actual_cols": [
+        "Award_Other_1",
+        "Award_Other_2",
+        "Award_Other_3",
+        "Award_Other_4",
+        "Award_Other_5",
+        "Award_Other_6",
+        "Award_Other_7",
+        "Award_Other_8",
+        "Award_Other_9",
+        "Award_Other_10"
+      ],
+      "db1_cols": [],
+      "db2_cols": [],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": ""
+    },
+    {
+      "canonical": "award recognition",
+      "norm_type": "text",
+      "actual_cols": [
+        "Award_Recognition_1",
+        "Award_Recognition_2",
+        "Award_Recognition_3",
+        "Award_Recognition_4",
+        "Award_Recognition_5",
+        "Award_Recognition_6",
+        "Award_Recognition_7",
+        "Award_Recognition_8",
+        "Award_Recognition_9",
+        "Award_Recognition_10"
+      ],
+      "db1_cols": [],
+      "db2_cols": [],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": ""
+    },
+    {
+      "canonical": "award year",
+      "norm_type": "number",
+      "actual_cols": [
+        "Award_Year_1",
+        "Award_Year_2",
+        "Award_Year_3",
+        "Award_Year_4",
+        "Award_Year_5",
+        "Award_Year_6",
+        "Award_Year_7",
+        "Award_Year_8",
+        "Award_Year_9",
+        "Award_Year_10"
+      ],
+      "db1_cols": [
+        "Award Year (1)",
+        "Award Year (2)",
+        "Award Year (3)",
+        "Award Year (4)",
+        "Award Year (5)"
+      ],
+      "db2_cols": [],
+      "db1_scores": {
+        "Award Year (1)": 0.833,
+        "Award Year (2)": 0.833,
+        "Award Year (3)": 0.833,
+        "Award Year (4)": 0.833,
+        "Award Year (5)": 0.833
+      },
+      "db2_scores": {},
+      "note": ""
+    },
+    {
+      "canonical": "batch leader constituent id",
+      "norm_type": "text",
+      "actual_cols": [
+        "Batch_Leader_Constituent_ID_1",
+        "Batch_Leader_Constituent_ID_2",
+        "Batch_Leader_Constituent_ID_3",
+        "Batch_Leader_Constituent_ID_4",
+        "Batch_Leader_Constituent_ID_5",
+        "Batch_Leader_Constituent_ID_6",
+        "Batch_Leader_Constituent_ID_7",
+        "Batch_Leader_Constituent_ID_8",
+        "Batch_Leader_Constituent_ID_9",
+        "Batch_Leader_Constituent_ID_10",
+        "Batch_Leader_Constituent_ID_11"
+      ],
+      "db1_cols": [
+        "Batch Leader - Constituent ID_1",
+        "Batch Leader - Constituent ID_2",
+        "Batch Leader - Constituent ID_3",
+        "Batch Leader - Constituent ID_4",
+        "Batch Leader - Constituent ID_5",
+        "Batch Leader - Constituent ID_6",
+        "Batch Leader - Constituent ID_7",
+        "Batch Leader - Constituent ID_8",
+        "Batch Leader - Constituent ID_9",
+        "Batch Leader - Constituent ID_10",
+        "Batch Leader - Constituent ID_11"
+      ],
+      "db2_cols": [],
+      "db1_scores": {
+        "Batch Leader - Constituent ID_1": 1.0,
+        "Batch Leader - Constituent ID_2": 1.0,
+        "Batch Leader - Constituent ID_3": 1.0,
+        "Batch Leader - Constituent ID_4": 1.0,
+        "Batch Leader - Constituent ID_5": 1.0,
+        "Batch Leader - Constituent ID_6": 1.0,
+        "Batch Leader - Constituent ID_7": 1.0,
+        "Batch Leader - Constituent ID_8": 1.0,
+        "Batch Leader - Constituent ID_9": 1.0,
+        "Batch Leader - Constituent ID_10": 1.0,
+        "Batch Leader - Constituent ID_11": 1.0
+      },
+      "db2_scores": {},
+      "note": ""
+    },
+    {
+      "canonical": "board memberships",
+      "norm_type": "text",
+      "actual_cols": [
+        "Board_Memberships"
+      ],
+      "db1_cols": [
+        "Board Memberships"
+      ],
+      "db2_cols": [],
+      "db1_scores": {
+        "Board Memberships": 1.0
+      },
+      "db2_scores": {},
+      "note": ""
+    },
+    {
+      "canonical": "chapter committee member",
+      "norm_type": "text",
+      "actual_cols": [
+        "Chapter_Committee_Member"
+      ],
+      "db1_cols": [],
+      "db2_cols": ["Chapter Admin"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "manually mapped"
+    },
+    {
+      "canonical": "chapter region admin",
+      "norm_type": "text",
+      "actual_cols": [
+        "Chapter_Region_Admin"
+      ],
+      "db1_cols": [],
+      "db2_cols": [
+        "Chapter Region Admin"
+      ],
+      "db1_scores": {},
+      "db2_scores": {
+        "Chapter Region Admin": 1.0
+      },
+      "note": ""
+    },
+    {
+      "canonical": "community service involvement",
+      "norm_type": "text",
+      "actual_cols": [
+        "Community_Service_Involvement"
+      ],
+      "db1_cols": [],
+      "db2_cols": [
+        "Community Service Involvement"
+      ],
+      "db1_scores": {},
+      "db2_scores": {
+        "Community Service Involvement": 1.0
+      },
+      "note": ""
+    },
+    {
+      "canonical": "date of birth",
+      "norm_type": "date",
+      "actual_cols": [
+        "Date_of_Birth"
+      ],
+      "db1_cols": [
+        "Date of Birth"
+      ],
+      "db2_cols": ["Birth date"],
+      "db1_scores": {
+        "Date of Birth": 1.0
+      },
+      "db2_scores": {"Birth date":1.0},
+      "note": "db2 manually  mapped"
+    },
+    {
+      "canonical": "db1 id",
+      "norm_type": "text",
+      "actual_cols": [
+        "DB1-ID",
+        "DB2-ID"
+      ],
+      "db1_cols": [
+        "DB1-ID"
+      ],
+      "db2_cols": [
+        "DB2-ID"
+      ],
+      "db1_scores": {
+        "DB1-ID": 1.0
+      },
+      "db2_scores": {
+        "DB2-ID": 0.833
+      },
+      "note": ""
+    },
+    {
+      "canonical": "deceased",
+      "norm_type": "text",
+      "actual_cols": [
+        "Deceased"
+      ],
+      "db1_cols": [
+        "Deceased"
+      ],
+      "db2_cols": [
+        "Is Deceased"
+      ],
+      "db1_scores": {
+        "Deceased": 1.0
+      },
+      "db2_scores": {
+        "Is Deceased": 0.842
+      },
+      "note": ""
+    },
+    {
+      "canonical": "deceased date",
+      "norm_type": "date",
+      "actual_cols": [
+        "Deceased_Date"
+      ],
+      "db1_cols": [
+        "Deceased Date"
+      ],
+      "db2_cols": [
+        "Deceased Date"
+      ],
+      "db1_scores": {
+        "Deceased Date": 1.0
+      },
+      "db2_scores": {
+        "Deceased Date": 1.0
+      },
+      "note": ""
+    },
+    {
+      "canonical": "dietary requirements",
+      "norm_type": "text",
+      "actual_cols": [
+        "Dietary_Requirements"
+      ],
+      "db1_cols": [
+        "Dietary Requirements"
+      ],
+      "db2_cols": [],
+      "db1_scores": {
+        "Dietary Requirements": 1.0
+      },
+      "db2_scores": {},
+      "note": ""
+    },
+    {
+      "canonical": "do not call",
+      "norm_type": "text",
+      "actual_cols": [
+        "Do_Not_Call"
+      ],
+      "db1_cols": [
+        "Do Not Call"
+      ],
+      "db2_cols": [
+        "Do Not Call"
+      ],
+      "db1_scores": {
+        "Do Not Call": 1.0
+      },
+      "db2_scores": {
+        "Do Not Call": 1.0
+      },
+      "note": ""
+    },
+    {
+      "canonical": "employment country",
+      "norm_type": "text",
+      "actual_cols": [
+        "Employment_Country_1",
+        "Employment_Country_2",
+        "Employment_Country_3",
+        "Employment_Country_4",
+        "Employment_Country_5",
+        "Employment_Country_6",
+        "Employment_Country_7",
+        "Employment_Country_8",
+        "Employment_Country_9",
+        "Employment_Country_10",
+        "Employment_Country_11",
+        "Employment_Country_12",
+        "Employment_Country_13",
+        "Employment_Country_14",
+        "Employment_Country_15",
+        "Employment_Country_16",
+        "Employment_Country_17",
+        "Employment_Country_18",
+        "Employment_Country_19",
+        "Employment_Country_20",
+        "Employment_Country_21",
+        "Employment_Country_22",
+        "Employment_Country_23",
+        "Employment_Country_24",
+        "Employment_Country_25"
+
+      ],
+      "db1_cols": [],
+      "db2_cols": [],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "no such columns were found in both db to be mapped "
+
+    },
+    {
+      "canonical": "employment company",
+      "norm_type": "text",
+      "actual_cols": [
+        "Employment_Company_1",
+        
+        "Employment_Company_2",
+        
+        "Employment_Company_3",
+        
+        "Employment_Company_4",
+        
+        "Employment_Company_5",
+        
+        "Employment_Company_6",
+        
+        "Employment_Company_7",
+        
+        "Employment_Company_8",
+        
+        "Employment_Company_9",
+        
+        "Employment_Company_10",
+        
+        "Employment_Company_11",
+        
+        "Employment_Company_12",
+        
+        "Employment_Company_13",
+        
+        "Employment_Company_14",
+        
+        "Employment_Company_15",
+        
+        "Employment_Company_16",
+        
+        "Employment_Company_17",
+        
+        "Employment_Company_18",
+        
+        "Employment_Company_19",
+        
+        "Employment_Company_20",
+        
+        "Employment_Company_21",
+        
+        "Employment_Company_22",
+        
+        "Employment_Company_23",
+        
+        "Employment_Company_24",
+        
+        "Employment_Company_25"
+        
+      ],
+      "db1_cols": ["Employer (1)","Employer (2)","Employer (3)","Employer (4)","Employer (5)","Employer (6)","Employer (7)","Employer (8)","Employer (9)","Employer (10)","Employer (11)","Employer (12)","Employer (13)","Employer (14)","Employer (15)","Employer (16)","Employer (17)","Employer (18)","Employer (19)","Employer (20)","Employer (21)","Employer (22)","Employer (23)","Employer (24)","Employer (25)"],
+      "db2_cols": ["Employer (1)","Employer (2)","Employer (3)","Employer (4)","Employer (5)"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "manually mapped both db cols"
+    },
+    {
+      "canonical": "employment current",
+      "norm_type": "text",
+      "actual_cols": [
+        "Employment_Current_1",
+        "Employment_Current_2",
+        "Employment_Current_3",
+        "Employment_Current_4",
+        "Employment_Current_5",
+        "Employment_Current_6",
+        "Employment_Current_7",
+        "Employment_Current_8",
+        "Employment_Current_9",
+        "Employment_Current_10",
+        "Employment_Current_11",
+        "Employment_Current_12",
+        "Employment_Current_13",
+        "Employment_Current_14",
+        "Employment_Current_15",
+        "Employment_Current_16",
+        "Employment_Current_17",
+        "Employment_Current_18",
+        "Employment_Current_19",
+        "Employment_Current_20",
+        "Employment_Current_21",
+        "Employment_Current_22",
+        "Employment_Current_23",
+        "Employment_Current_24",
+        "Employment_Current_25"
+      ],
+      "db1_cols": [],
+      "db2_cols": ["Is currently working here (1)","Is currently working here (2)","Is currently working here (3)","Is currently working here (4)","Is currently working here (5)","Is currently working here (1).1","Is currently working here (2).1","Is currently working here (3).1","Is currently working here (4).1","Is currently working here (5).1"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "db2 cols manually mapped db1 not found"
+    },
+    {
+      "canonical": "employment designation",
+      "norm_type": "text",
+      "actual_cols": [
+        "Employment_Designation_1",
+        "Employment_Designation_2",
+        "Employment_Designation_3",
+        "Employment_Designation_4",
+        "Employment_Designation_5",
+        "Employment_Designation_6",
+        "Employment_Designation_7",
+        "Employment_Designation_8",
+        "Employment_Designation_9",
+        "Employment_Designation_10",
+        "Employment_Designation_11",
+        "Employment_Designation_12",
+        "Employment_Designation_13",
+        "Employment_Designation_14",
+        "Employment_Designation_15",
+        "Employment_Designation_16",
+        "Employment_Designation_17",
+        "Employment_Designation_18",
+        "Employment_Designation_19",
+        "Employment_Designation_20",
+        "Employment_Designation_21",
+        "Employment_Designation_22",
+        "Employment_Designation_23",
+        "Employment_Designation_24",
+        "Employment_Designation_25"
+
+
+      ],
+      "db1_cols": ["Job Title (1)","Job Title (2)","Job Title (3)","Job Title (4)","Job Title (5)","Job Title (6)","Job Title (7)","Job Title (8)","Job Title (9)","Job Title (10)","Job Title (11)","Job Title (12)","Job Title (13)","Job Title (14)","Job Title (15)","Job Title (16)","Job Title (17)","Job Title (18)","Job Title (19)","Job Title (20)","Job Title (21)","Job Title (22)","Job Title (23)","Job Title (24)","Job Title (25)"],
+      "db2_cols": ["Job Title (1)","Job Title (2)","Job Title (3)","Job Title (4)","Job Title (5)","Job Title (1).1","Job Title (2).1","Job Title (3).1","Job Title (4).1","Job Title (5).1"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "both cols are manually mapped "
+    },
+    {
+      "canonical": "employment category",
+      "norm_type": "text",
+      "actual_cols": [
+        
+        "Employment_Designation_Category_1",
+        
+        "Employment_Designation_Category_2",
+        
+        "Employment_Designation_Category_3",
+        
+        "Employment_Designation_Category_4",
+        
+        "Employment_Designation_Category_5",
+        
+        "Employment_Designation_Category_6",
+        
+        "Employment_Designation_Category_7",
+        
+        "Employment_Designation_Category_8",
+        
+        "Employment_Designation_Category_9",
+        
+        "Employment_Designation_Category_10",
+        
+        "Employment_Designation_Category_11",
+        
+        "Employment_Designation_Category_12",
+        
+        "Employment_Designation_Category_13",
+        
+        "Employment_Designation_Category_14",
+        
+        "Employment_Designation_Category_15",
+        
+        "Employment_Designation_Category_16",
+        
+        "Employment_Designation_Category_17",
+        
+        "Employment_Designation_Category_18",
+        
+        "Employment_Designation_Category_19",
+        
+        "Employment_Designation_Category_20",
+        
+        "Employment_Designation_Category_21",
+        
+        "Employment_Designation_Category_22",
+        
+        "Employment_Designation_Category_23",
+        
+        "Employment_Designation_Category_24",
+        
+        "Employment_Designation_Category_25"
+      ],
+      "db1_cols": [],
+      "db2_cols": [],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "no need to mapped as per KH sir "
+    },
+    {
+      "canonical": "employment family office",
+      "norm_type": "text",
+      "actual_cols": [
+        "Employment_Family_Office_1",
+        "Employment_Family_Office_2",
+        "Employment_Family_Office_3",
+        "Employment_Family_Office_4",
+        "Employment_Family_Office_5",
+        "Employment_Family_Office_6",
+        "Employment_Family_Office_7",
+        "Employment_Family_Office_8",
+        "Employment_Family_Office_9",
+        "Employment_Family_Office_10",
+        "Employment_Family_Office_11",
+        "Employment_Family_Office_12",
+        "Employment_Family_Office_13",
+        "Employment_Family_Office_14",
+        "Employment_Family_Office_15",
+        "Employment_Family_Office_16",
+        "Employment_Family_Office_17",
+        "Employment_Family_Office_18",
+        "Employment_Family_Office_19",
+        "Employment_Family_Office_20",
+        "Employment_Family_Office_21",
+        "Employment_Family_Office_22",
+        "Employment_Family_Office_23",
+        "Employment_Family_Office_24",
+        "Employment_Family_Office_25"
+      ],
+      "db1_cols": [],
+      "db2_cols": [],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": ""
+    },
+    {
+      "canonical": "employment from",
+      "norm_type": "date",
+      "actual_cols": [
+        "Employment_From_1",
+        "Employment_From_2",
+        "Employment_From_3",
+        "Employment_From_4",
+        "Employment_From_5",
+        "Employment_From_6",
+        "Employment_From_7",
+        "Employment_From_8",
+        "Employment_From_9",
+        "Employment_From_10",
+        "Employment_From_11",
+        "Employment_From_12",
+        "Employment_From_13",
+        "Employment_From_14",
+        "Employment_From_15",
+        "Employment_From_16",
+        "Employment_From_17",
+        "Employment_From_18",
+        "Employment_From_19",
+        "Employment_From_20",
+        "Employment_From_21",
+        "Employment_From_22",
+        "Employment_From_23",
+        "Employment_From_24",
+        "Employment_From_25"
+
+      ],
+      "db1_cols": ["Start Date (1)","Start Date (2)","Start Date (3)","Start Date (4)","Start Date (5)","Start Date (6)","Start Date (7)","Start Date (8)","Start Date (9)","Start Date (10)","Start Date (11)","Start Date (12)","Start Date (13)","Start Date (14)","Start Date (15)","Start Date (16)","Start Date (17)","Start Date (18)","Start Date (19)","Start Date (20)","Start Date (21)","Start Date (22)","Start Date (23)","Start Date (24)","Start Date (25)"],
+      "db2_cols": ["Start Year (1)","Start Year (2)","Start Year (3)","Start Year (4)","Start Year (5)","Start Year (1).1","Start Year (2).1","Start Year (3).1","Start Year (4).1","Start Year (5).1"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "both cols manually mapped "
+
+    },
+    {
+      "canonical": "employment To",
+      "norm_type": "date",
+      "actual_cols": [
+        
+        "Employment_To_1",
+        
+        "Employment_To_2",
+        
+        "Employment_To_3",
+        
+        "Employment_To_4",
+        
+        "Employment_To_5",
+        
+        "Employment_To_6",
+        
+        "Employment_To_7",
+        
+        "Employment_To_8",
+        
+        "Employment_To_9",
+        
+        "Employment_To_10",
+        
+        "Employment_To_11",
+        
+        "Employment_To_12",
+        
+        "Employment_To_13",
+        
+        "Employment_To_14",
+        
+        "Employment_To_15",
+        
+        "Employment_To_16",
+        
+        "Employment_To_17",
+        
+        "Employment_To_18",
+        
+        "Employment_To_19",
+        
+        "Employment_To_20",
+        
+        "Employment_To_21",
+        
+        "Employment_To_22",
+        
+        "Employment_To_23",
+        
+        "Employment_To_24",
+        
+        "Employment_To_25"
+      ],
+      "db1_cols": ["End Date (1)","End Date (2)","End Date (3)","End Date (4)","End Date (5)","End Date (6)","End Date (7)","End Date (8)","End Date (9)","End Date (10)","End Date (11)","End Date (12)","End Date (13)","End Date (14)","End Date (15)","End Date (16)","End Date (17)","End Date (18)","End Date (19)","End Date (20)","End Date (21)","End Date (22)","End Date (23)","End Date (24)","End Date (25)"],
+      "db2_cols": ["End Year (1)","End Year (2)","End Year (3)","End Year (4)","End Year (5)","End Year (1).1","End Year (2).1","End Year (3).1","End Year (4).1","End Year (5).1"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "both cols manually mapped "
+    },
+    {
+      "canonical": "employment industry",
+      "norm_type": "text",
+      "actual_cols": [
+        "Employment_Industry_1",
+        "Employment_Industry_2",
+        "Employment_Industry_3",
+        "Employment_Industry_4",
+        "Employment_Industry_5",
+        "Employment_Industry_6",
+        "Employment_Industry_7",
+        "Employment_Industry_8",
+        "Employment_Industry_9",
+        "Employment_Industry_10",
+        "Employment_Industry_11",
+        "Employment_Industry_12",
+        "Employment_Industry_13",
+        "Employment_Industry_14",
+        "Employment_Industry_15",
+        "Employment_Industry_16",
+        "Employment_Industry_17",
+        "Employment_Industry_18",
+        "Employment_Industry_19",
+        "Employment_Industry_20",
+        "Employment_Industry_21",
+        "Employment_Industry_22",
+        "Employment_Industry_23",
+        "Employment_Industry_24",
+        "Employment_Industry_25"
+      ],
+      "db1_cols": ["Industry"],
+      "db2_cols": ["Industry (1)","Industry (2)","Industry (3)","Industry (4)","Industry (5)"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "both cols manually mapped "
+    },
+    {
+      "canonical": "employment preferred",
+      "norm_type": "text",
+      "actual_cols": [
+        "Employment_Preferred_1",
+        "Employment_Preferred_2",
+        "Employment_Preferred_3",
+        "Employment_Preferred_4",
+        "Employment_Preferred_5",
+        "Employment_Preferred_6",
+        "Employment_Preferred_7",
+        "Employment_Preferred_8",
+        "Employment_Preferred_9",
+        "Employment_Preferred_10",
+        "Employment_Preferred_11",
+        "Employment_Preferred_12",
+        "Employment_Preferred_13",
+        "Employment_Preferred_14",
+        "Employment_Preferred_15",
+        "Employment_Preferred_16",
+        "Employment_Preferred_17",
+        "Employment_Preferred_18",
+        "Employment_Preferred_19",
+        "Employment_Preferred_20",
+        "Employment_Preferred_21",
+        "Employment_Preferred_22",
+        "Employment_Preferred_23",
+        "Employment_Preferred_24",
+        "Employment_Preferred_25"
+      ],
+      "db1_cols": [],
+      "db2_cols": [],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "no need to map "
+    },
+    {
+      "canonical": "events attended",
+      "norm_type": "text",
+      "actual_cols": [
+        "Events_Attended"
+      ],
+      "db1_cols": [],
+      "db2_cols": [],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": ""
+    },
+    {
+      "canonical": "facebook",
+      "norm_type": "text",
+      "actual_cols": [
+        "Facebook"
+      ],
+      "db1_cols": [
+        "Facebook"
+      ],
+      "db2_cols": [
+        "Facebook Url"
+      ],
+      "db1_scores": {
+        "Facebook": 1.0
+      },
+      "db2_scores": {
+        "Facebook Url": 0.8
+      },
+      "note": ""
+    },
+    {
+      "canonical": "family company",
+      "norm_type": "text",
+      "actual_cols": [
+        "Family_Company_1",
+        "Family_Company_2",
+        "Family_Company_3",
+        "Family_Company_4",
+        "Family_Company_5",
+        "Family_Company_6",
+        "Family_Company_7",
+        "Family_Company_8",
+        "Family_Company_9",
+        "Family_Company_10"
+      ],
+     "db1_cols": [],
+      "db2_cols": ["Spouse S Company"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "db2 cols manually mapped"
+    },
+    {
+      "canonical": "family constituent id",
+      "norm_type": "text",
+      "actual_cols": [
+        "Family_Constituent_ID_1",
+        "Family_Constituent_ID_2",
+        "Family_Constituent_ID_3",
+        "Family_Constituent_ID_4",
+        "Family_Constituent_ID_5",
+        "Family_Constituent_ID_6",
+        "Family_Constituent_ID_7",
+        "Family_Constituent_ID_8",
+        "Family_Constituent_ID_9",
+        "Family_Constituent_ID_10"
+      ],
+      "db1_cols": [],
+      "db2_cols": [
+        "Constituent Id"
+      ],
+      "db1_scores": {},
+      "db2_scores": {
+        "Constituent Id": 0.8
+      },
+      "note": ""
+    },
+     {
+      "canonical": "family last name",
+      "norm_type": "text",
+      "actual_cols": [
+        "Family_Last_Name_1",
+        "Family_Last_Name_2",
+        "Family_Last_Name_3",
+        "Family_Last_Name_4",
+        "Family_Last_Name_5",
+        "Family_Last_Name_6",
+        "Family_Last_Name_7",
+        "Family_Last_Name_8",
+        "Family_Last_Name_9",
+        "Family_Last_Name_10"
+
+      ],
+      "db1_cols":["Relationship Last Name (1)","Relationship Last Name (2)","Relationship Last Name (3)","Relationship Last Name (4)","Relationship Last Name (5)","Relationship Last Name (6)","Relationship Last Name (7)","Relationship Last Name (8)","Relationship Last Name (9)","Relationship Last Name (10)"],
+      "db2_cols": [],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "db1 cols manually mapped"
+    },
+    {
+      "canonical": "family first name",
+      "norm_type": "text",
+      "actual_cols": [
+        "Family_First_Name_1",
+        
+        "Family_First_Name_2",
+        
+        "Family_First_Name_3",
+        
+        "Family_First_Name_4",
+        
+        "Family_First_Name_5",
+        
+        "Family_First_Name_6",
+        
+        "Family_First_Name_7",
+        
+        "Family_First_Name_8",
+        
+        "Family_First_Name_9",
+       
+        "Family_First_Name_10"
+        
+      ],
+      "db1_cols": ["Relationship First Name (1)",
+      
+      "Relationship First Name (2)",
+      
+      "Relationship First Name (3)",
+      
+      "Relationship First Name (4)",
+      
+      "Relationship First Name (5)",
+      
+      "Relationship First Name (6)",
+      
+      "Relationship First Name (7)",
+      
+      "Relationship First Name (8)",
+      
+      "Relationship First Name (9)",
+      
+      "Relationship First Name (10)"
+      
+],
+      "db2_cols": [],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "db1 cols manually mapped"
+  
+    },
+    {
+      "canonical": "family iitb alumni",
+      "norm_type": "text",
+      "actual_cols": [
+        "Family_IITB_Alumni_1",
+        "Family_IITB_Alumni_2",
+        "Family_IITB_Alumni_3",
+        "Family_IITB_Alumni_4",
+        "Family_IITB_Alumni_5",
+        "Family_IITB_Alumni_6",
+        "Family_IITB_Alumni_7",
+        "Family_IITB_Alumni_8",
+        "Family_IITB_Alumni_9",
+        "Family_IITB_Alumni_10"
+      ],
+      "db1_cols": [],
+      "db2_cols": [],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "no need to map conntains true and false value"
+    },
+    {
+      "canonical": "family news achievements",
+      "norm_type": "text",
+      "actual_cols": [
+        "Family_News_Achievements"
+      ],
+      "db1_cols": [
+        "Family News and Achievements"
+      ],
+      "db2_cols": [],
+      "db1_scores": {
+        "Family News and Achievements": 0.923
+      },
+      "db2_scores": {},
+      "note": ""
+    },
+    {
+      "canonical": "family profession",
+      "norm_type": "text",
+      "actual_cols": [
+        "Family_Profession_1",
+        "Family_Profession_2",
+        "Family_Profession_3",
+        "Family_Profession_4",
+        "Family_Profession_5",
+        "Family_Profession_6",
+        "Family_Profession_7",
+        "Family_Profession_8",
+        "Family_Profession_9",
+        "Family_Profession_10"
+      ],
+      "db1_cols": ["Spouse S Profession"],
+      "db2_cols": [],
+      "db1_scores": {"Spouse S Profession":1.0},     
+      "db2_scores": {},
+      "note": "db1 cols manually mapped"
+    },
+    {
+      "canonical": "family relationship",
+      "norm_type": "text",
+      "actual_cols": [
+        "Family_Relationship_1",
+        "Family_Relationship_2",
+        "Family_Relationship_3",
+        "Family_Relationship_4",
+        "Family_Relationship_5",
+        "Family_Relationship_6",
+        "Family_Relationship_7",
+        "Family_Relationship_8",
+        "Family_Relationship_9",
+        "Family_Relationship_10"
+      ],
+      "db1_cols": ["Relationship Type (1)",
+       "Relationship Type (2)",
+       "Relationship Type (3)",
+       "Relationship Type (4)",
+       "Relationship Type (5)"],
+      "db2_cols": [],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "db1 cols manually mapped"
+    },
+    {
+      "canonical": "favourite memory iit days",
+      "norm_type": "text",
+      "actual_cols": [
+        "Favourite_Memory_IIT_Days"
+      ],
+      "db1_cols": [],
+      "db2_cols": [
+        "Favourite Memory From Iit Days"
+      ],
+      "db1_scores": {},
+      "db2_scores": {
+        "Favourite Memory From Iit Days": 0.909
+      },
+      "note": ""
+    },
+    {
+      "canonical": "first name",
+      "norm_type": "text",
+      "actual_cols": [
+        "First_Name"
+      ],
+      "db1_cols": [
+        "First Name"
+      ],
+      "db2_cols": [
+        "First Name"
+      ],
+      "db1_scores": {
+        "First Name": 1.0
+      },
+      "db2_scores": {
+        "First Name": 1.0
+      },
+      "note": ""
+    },
+    {
+      "canonical": "former name",
+      "norm_type": "text",
+      "actual_cols": [
+        "Former_Name"
+      ],
+      "db1_cols": [
+        "Former Name"
+      ],
+      "db2_cols": [],
+      "db1_scores": {
+        "Former Name": 1.0
+      },
+      "db2_scores": {},
+      "note": ""
+    },
+    {
+      "canonical": "gender",
+      "norm_type": "text",
+      "actual_cols": [
+        "Gender"
+      ],
+      "db1_cols": [
+        "Gender"
+      ],
+      "db2_cols": [
+        "Gender"
+      ],
+      "db1_scores": {
+        "Gender": 1.0
+      },
+      "db2_scores": {
+        "Gender": 1.0
+      },
+      "note": ""
+    },
+    {
+      "canonical": "google",
+      "norm_type": "text",
+      "actual_cols": [
+        "Google"
+      ],
+      "db1_cols": [
+        "Google"
+      ],
+      "db2_cols": ["Google Url"],
+      "db1_scores": {
+        "Google": 1.0
+      },
+      "db2_scores": {},
+      "note": "db2 manually mapped "
+    },
+    {
+      "canonical": "hobbies",
+      "norm_type": "text",
+      "actual_cols": [
+        "Hobbies"
+      ],
+      "db1_cols": [
+        "Hobbies"
+      ],
+       "db2_cols": ["Interests"],
+      "db1_scores": {
+        "Hobbies": 1.0
+      },
+      "db2_scores": {"Interests":1.0},
+      "note": "db2 manually  mapped"
+    },
+    {
+      "canonical": "iitb batch",
+      "norm_type": "number",
+      "actual_cols": [
+        "IITB_Batch_1",
+        "IITB_Batch_2",
+        "IITB_Batch_3",
+        "IITB_Batch_4",
+        "IITB_Batch_5",
+        "IITB_Batch_6",
+        "IITB_Batch_7",
+        "IITB_Batch_8",
+        "IITB_Batch_9",
+        "IITB_Batch_10"
+      ],
+      "db1_cols": [],
+      "db2_cols": ["Class year (1)","Class year (2)","Class year (3)","Class year (4)","Class year (5)","Class Year (1)3","Class Year (2)5","Class Year (3)7","Class Year (4)9","Class Year (5)11"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "db2 manually mapped "
+    },
+    {
+      "canonical": "iitb degree",
+      "norm_type": "text",
+      "actual_cols": [
+        "IITB_Degree_1",
+        "IITB_Degree_2",
+        "IITB_Degree_3",
+        "IITB_Degree_4",
+        "IITB_Degree_5",
+        "IITB_Degree_6",
+        "IITB_Degree_7",
+        "IITB_Degree_8",
+        "IITB_Degree_9",
+        "IITB_Degree_10"
+      ],
+      "db1_cols": ["Degree (1)",
+    "Degree (2)",
+  "Degree (3)",
+"Degree (4)",
+"Degree (5)"],
+      "db2_cols": ["Course (1)",
+    "Course (2)",
+  "Course (3)",
+"Course (4)",
+"Course (5)"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "db1 and db2 cols are manually mapped"
+    },
+    {
+      "canonical": "iitb department",
+      "norm_type": "text",
+      "actual_cols": [
+        "IITB_Department_1",
+        "IITB_Department_2",
+        "IITB_Department_3",
+        "IITB_Department_4",
+        "IITB_Department_5",
+        "IITB_Department_6",
+        "IITB_Department_7",
+        "IITB_Department_8",
+        "IITB_Department_9",
+        "IITB_Department_10"
+      ],
+      "db1_cols": ["Department (1)","Department (2)","Department (3)","Department (4)","Department (5)"],
+      "db2_cols": ["Department (1)","Department (2)","Department (3)","Department (4)","Department (5)"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "manually mapped both db cols"
+    },
+    {
+      "canonical": "iitb education status",
+      "norm_type": "text",
+      "actual_cols": [
+        "IITB_Education_Status",
+        "IITB_Education_Type_1",
+        "IITB_Education_Type_2",
+        "IITB_Education_Type_3",
+        "IITB_Education_Type_4",
+        "IITB_Education_Type_5",
+        "IITB_Education_Type_6",
+        "IITB_Education_Type_7",
+        "IITB_Education_Type_8",
+        "IITB_Education_Type_9",
+        "IITB_Education_Type_10"
+      ],
+      "db1_cols": [],
+      "db2_cols": [],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "no need to map "
+    },
+    {
+      "canonical": "iitb email",
+      "norm_type": "email",
+      "actual_cols": [
+        "IITB_Email"
+      ],
+      "db1_cols": ["Primary Email","Email 1","Email 2","Email 3","Email 4","Email 5","Email 6","Email 7","Email 8","Email 9","Email 10","Email 11","Email 12","Email 13","Email 14","Email 15","Email 16","Email 17","Email 18","Email 19","Email 20"],
+      "db2_cols": ["Address (1)","Address (2)","Address (3)","Address (4)","Address (5)"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "db1 and db2 cols are manually mapped"
+    },
+    {
+      "canonical": "iitb email verified",
+      "norm_type": "email",
+      "actual_cols": [
+        "IITB_Email_Verified"
+      ],
+      "db1_cols": [],
+      "db2_cols": ["Is Verified (1)","Is Verified (2)","Is Verified (3)","Is Verified (4)","Is Verified (5)"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": ""
+    },
+    {
+      "canonical": "iitb entry year",
+      "norm_type": "number",
+      "actual_cols": [
+        "IITB_Entry_Year_1",
+        "IITB_Entry_Year_2",
+        "IITB_Entry_Year_3",
+        "IITB_Entry_Year_4",
+        "IITB_Entry_Year_5",
+        "IITB_Entry_Year_6",
+        "IITB_Entry_Year_7",
+        "IITB_Entry_Year_8",
+        "IITB_Entry_Year_9",
+        "IITB_Entry_Year_10"
+      ],
+      "db1_cols": ["Entry Year (1)","Entry Year (2)","Entry Year (3)","Entry Year (4)","Entry Year (5)"],
+      "db2_cols": ["Year of Joining (1)","Year of Joining (2)","Year of Joining (3)","Year of Joining (4)","Year of Joining (5)","Year of Joining (1).1","Year of Joining (2).1","Year of Joining (3).1","Year of Joining (4).1","Year of Joining (5).1"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "db1 and db2 cols are manually mapped"
+    },
+    {
+      "canonical": "iitb graduation year",
+      "norm_type": "number",
+      "actual_cols": [
+        "IITB_Graduation_Year_1",
+        "IITB_Graduation_Year_2",
+        "IITB_Graduation_Year_3",
+        "IITB_Graduation_Year_4",
+        "IITB_Graduation_Year_5",
+        "IITB_Graduation_Year_6",
+        "IITB_Graduation_Year_7",
+        "IITB_Graduation_Year_8",
+        "IITB_Graduation_Year_9",
+        "IITB_Graduation_Year_10"
+      ],
+      "db1_cols": ["Graduation Year (1)","Graduation Year (2)","Graduation Year (3)","Graduation Year (4)","Graduation Year (5)"],
+      "db2_cols": ["Year of Graduation (1)","Year of Graduation (2)","Year of Graduation (3)","Year of Graduation (4)","Year of Graduation (5)"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "manually mapped both db cols"
+    },
+    {
+      "canonical": "iitb hostel",
+      "norm_type": "text",
+      "actual_cols": [
+        "IITB_Hostel_1",
+        "IITB_Hostel_2",
+        "IITB_Hostel_3",
+        "IITB_Hostel_4",
+        "IITB_Hostel_5",
+        "IITB_Hostel_6",
+        "IITB_Hostel_7",
+        "IITB_Hostel_8",
+        "IITB_Hostel_9",
+        "IITB_Hostel_10"
+      ],
+      "db1_cols": ["Hostel (1)","Hostel (2)","Hostel (3)","Hostel (4)","Hostel (5)"],
+      "db2_cols": ["Hostel (1)","Hostel (2)","Hostel (3)","Hostel (4)","Hostel (5)"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "db1 and db2 cols are manually mapped"
+    },
+    {
+      "canonical": "iitb major",
+      "norm_type": "text",
+      "actual_cols": [
+        "IITB_Major_1",
+        
+        "IITB_Major_2",
+        
+        "IITB_Major_3",
+        
+        "IITB_Major_4",
+        
+        "IITB_Major_5",
+        
+        "IITB_Major_6",
+        
+        "IITB_Major_7",
+        
+        "IITB_Major_8",
+        
+        "IITB_Major_9",
+        
+        "IITB_Major_10"
+        
+      ],
+      "db1_cols": ["Major (1)","Major (2)","Major (3)","Major (4)","Major (5)"],
+      "db2_cols": ["Majors (1)","Majors (2)","Majors (3)","Majors (4)","Majors (5)"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "manually mapped both db cols"
+    },
+    {
+      "canonical": "iitb Minor",
+      "norm_type": "text",
+      "actual_cols": [
+        "IITB_Minor_1",
+        "IITB_Minor_2",
+        "IITB_Minor_3",
+        "IITB_Minor_4",
+        "IITB_Minor_5",
+        "IITB_Minor_6",
+        "IITB_Minor_7",
+        "IITB_Minor_8",
+        "IITB_Minor_9",
+        "IITB_Minor_10"
+
+
+      ],"db1_cols": ["Minor (1)","Minor (2)","Minor (3)","Minor (4)","Minor (5)"],
+      "db2_cols": ["Minors (1)","Minors (2)","Minors (3)","Minors (4)","Minors (5)"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "manually mapped both db cols"
+
+    },
+    {
+      "canonical": "IITB_Other_Roll_Number",
+      "norm_type": "number",
+      "actual_cols":[
+        "IITB_Other_Roll_Number_1",
+        "IITB_Other_Roll_Number_2",
+        "IITB_Other_Roll_Number_3",
+        "IITB_Other_Roll_Number_4",
+        "IITB_Other_Roll_Number_5",
+        "IITB_Other_Roll_Number_6",
+        "IITB_Other_Roll_Number_7",
+        "IITB_Other_Roll_Number_8",
+        "IITB_Other_Roll_Number_9",
+        "IITB_Other_Roll_Number_10"
+
+      ],
+      "db1_cols": [],
+      "db2_cols": [],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "no need to map contains blank value "
+    },
+    {
+      "canonical": "iitb roll number",
+      "norm_type": "number",
+      "actual_cols": [
+        "IITB_Roll_Number_1",
+        
+        "IITB_Roll_Number_2",
+        
+        "IITB_Roll_Number_3",
+        
+        "IITB_Roll_Number_4",
+        
+        "IITB_Roll_Number_5",
+        
+        "IITB_Roll_Number_6",
+        
+        "IITB_Roll_Number_7",
+        
+        "IITB_Roll_Number_8",
+        
+        "IITB_Roll_Number_9",
+        
+        "IITB_Roll_Number_10"
+        
+      ],
+      "db1_cols": ["Roll Number (1)","Roll Number (2)","Roll Number (3)","Roll Number (4)","Roll Number (5)"],
+      "db2_cols": ["Roll Number (1)","Roll Number (2)","Roll Number (3)","Roll Number (4)","Roll Number (5)","Roll Number (1).1","Roll Number (2).1","Roll Number (3).1","Roll Number (4).1","Roll Number (5).1","Roll Number (1).2","Roll Number (2).2","Roll Number (3).2","Roll Number (4).2","Roll Number (5).2"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "db1 and db2 cols are manually mapped"
+    },
+    {
+      "canonical": "industry",
+      "norm_type": "text",
+      "actual_cols": [
+        "Industry"
+      ],
+      "db1_cols": [
+        "Industry"
+      ],
+      "db2_cols": [
+        "Industry (1)",
+        "Industry (2)",
+        "Industry (3)",
+        "Industry (4)",
+        "Industry (5)"
+      ],
+      "db1_scores": {
+        "Industry": 1.0
+      },
+      "db2_scores": {
+        "Industry (1)": 0.8,
+        "Industry (2)": 0.8,
+        "Industry (3)": 0.8,
+        "Industry (4)": 0.8,
+        "Industry (5)": 0.8
+      },
+      "note": ""
+    },
+    {
+      "canonical": "initiative additional info",
+      "norm_type": "text",
+      "actual_cols": [
+        "Initiative_Additional_Info_1",
+        "Initiative_Additional_Info_2",
+        "Initiative_Additional_Info_3",
+        "Initiative_Additional_Info_4",
+        "Initiative_Additional_Info_5",
+        "Initiative_Additional_Info_6",
+        "Initiative_Additional_Info_7",
+        "Initiative_Additional_Info_8",
+        "Initiative_Additional_Info_9",
+        "Initiative_Additional_Info_10"
+      ],
+      "db1_cols": [],
+      "db2_cols": [],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "no columns were mentioned in resource file "
+    },
+    {
+      "canonical": "initiative name",
+      "norm_type": "text",
+      "actual_cols": [
+        "Initiative_Name_1",
+        "Initiative_End_Date_1",
+        "Initiative_Name_2",
+        "Initiative_End_Date_2",
+        "Initiative_Name_3",
+        "Initiative_End_Date_3",
+        "Initiative_Name_4",
+        "Initiative_End_Date_4",
+        "Initiative_Name_5",
+        "Initiative_End_Date_5",
+        "Initiative_Name_6",
+        "Initiative_End_Date_6",
+        "Initiative_Name_7",
+        "Initiative_End_Date_7",
+        "Initiative_Name_8",
+        "Initiative_End_Date_8",
+        "Initiative_Name_9",
+        "Initiative_End_Date_9",
+        "Initiative_Name_10",
+        "Initiative_End_Date_10"
+      ],
+      "db1_cols": [],
+      "db2_cols": [],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "no columns were mentioned in resource file"
+    },
+    {
+      "canonical": "initiative program",
+      "norm_type": "text",
+      "actual_cols": [
+        "Initiative_Program_1",
+        "Initiative_Program_2",
+        "Initiative_Program_3",
+        "Initiative_Program_4",
+        "Initiative_Program_5",
+        "Initiative_Program_6",
+        "Initiative_Program_7",
+        "Initiative_Program_8",
+        "Initiative_Program_9",
+        "Initiative_Program_10"
+      ],
+      "db1_cols": [],
+      "db2_cols": [],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "no columns were mentioned in resource file"
+    },
+    {
+      "canonical": "initiative start date",
+      "norm_type": "date",
+      "actual_cols": [
+        "Initiative_Start_Date_1",
+        "Initiative_Start_Date_2",
+        "Initiative_Start_Date_3",
+        "Initiative_Start_Date_4",
+        "Initiative_Start_Date_5",
+        "Initiative_Start_Date_6",
+        "Initiative_Start_Date_7",
+        "Initiative_Start_Date_8",
+        "Initiative_Start_Date_9",
+        "Initiative_Start_Date_10"
+      ],
+      "db1_cols": [],
+      "db2_cols": [],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "no columns were mentioned in resource file"
+    },
+    {
+      "canonical": "insights",
+      "norm_type": "text",
+      "actual_cols": [
+        "Insights"
+      ],
+      "db1_cols": [
+        "Insights"
+      ],
+      "db2_cols": [],
+      "db1_scores": {
+        "Insights": 1.0
+      },
+      "db2_scores": {},
+      "note": ""
+    },
+    {
+      "canonical": "interest",
+      "norm_type": "text",
+      "actual_cols": [
+        "Interest"
+      ],
+      "db1_cols": [
+        "Interest"
+      ],
+      "db2_cols": [
+        "Interests"
+      ],
+      "db1_scores": {
+        "Interest": 1.0
+      },
+      "db2_scores": {
+        "Interests": 0.941
+      },
+      "note": ""
+    },
+    {
+      "canonical": "last name",
+      "norm_type": "text",
+      "actual_cols": [
+        "Last_Name"
+      ],
+      "db1_cols": [
+        "Last Name"
+      ],
+      "db2_cols": [
+        "Last Name"
+      ],
+      "db1_scores": {
+        "Last Name": 1.0
+      },
+      "db2_scores": {
+        "Last Name": 1.0
+      },
+      "note": ""
+    },
+    {
+      "canonical": "life member",
+      "norm_type": "text",
+      "actual_cols": [
+        "Life_Member"
+      ],
+      "db1_cols": [],
+      "db2_cols": [
+        "Life Member"
+      ],
+      "db1_scores": {},
+      "db2_scores": {
+        "Life Member": 1.0
+      },
+      "note": ""
+    },
+    {
+      "canonical": "linkedin",
+      "norm_type": "text",
+      "actual_cols": [
+        "LinkedIn"
+      ],
+      "db1_cols": [
+        "LinkedIn"
+      ],
+      "db2_cols": [
+        "Linkedin Url"
+      ],
+      "db1_scores": {
+        "LinkedIn": 1.0
+      },
+      "db2_scores": {
+        "Linkedin Url": 0.8
+      },
+      "note": ""
+    },
+    {
+      "canonical": "major donations",
+      "norm_type": "text",
+      "actual_cols": [
+        "Major_Donations"
+      ],
+      "db1_cols": [
+        "Major Donations"
+      ],
+      "db2_cols": [],
+      "db1_scores": {
+        "Major Donations": 1.0
+      },
+      "db2_scores": {},
+      "note": ""
+    },
+    {
+      "canonical": "major investments",
+      "norm_type": "text",
+      "actual_cols": [
+        "Major_Investments"
+      ],
+      "db1_cols": [
+        "Major Investments"
+      ],
+      "db2_cols": [],
+      "db1_scores": {
+        "Major Investments": 1.0
+      },
+      "db2_scores": {},
+      "note": ""
+    },
+    {
+      "canonical": "manual review reasons",
+      "norm_type": "text",
+      "actual_cols": [
+        "Manual_Review_Reasons"
+      ],
+      "db1_cols": [],
+      "db2_cols": [],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": ""
+    },
+    {
+      "canonical": "manual review required",
+      "norm_type": "text",
+      "actual_cols": [
+        "Manual_Review_Required"
+      ],
+      "db1_cols": [],
+      "db2_cols": [],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": ""
+    },
+    {
+      "canonical": "marital status",
+      "norm_type": "text",
+      "actual_cols": [
+        "Marital_Status"
+      ],
+      "db1_cols": [
+        "Marital Status"
+      ],
+      "db2_cols": [
+        "Marital Status"
+      ],
+      "db1_scores": {
+        "Marital Status": 1.0
+      },
+      "db2_scores": {
+        "Marital Status": 1.0
+      },
+      "note": ""
+    },
+    {
+      "canonical": "marriage anniversary",
+      "norm_type": "date",
+      "actual_cols": [
+        "Marriage_Anniversary"
+      ],
+      "db1_cols": [
+        "Marriage Anniversary"
+      ],
+      "db2_cols": ["Wedding Anniversary Date"],
+      "db1_scores": {
+        "Marriage Anniversary": 1.0
+      },
+      "db2_scores": {"Wedding Anniversary Date":1.0},
+      "note": "db2 manually  mapped"
+    },
+    {
+      "canonical": "Maiden_Name",
+      "norm_type": "text",
+      "actual_cols": [
+        "Maiden_Name"
+        
+      ], "db1_cols": [
+        "Maiden Name"
+        
+      ],
+      "db2_cols": [
+        "Maiden Name"
+      ],
+      "db1_scores": {
+        "Maiden Name": 1.0
+      },
+      "db2_scores": {
+        "Maiden Name": 1.0
+      },
+      "note": "manually mapped"
+    },
+    {
+      "canonical": "middle name",
+      "norm_type": "text",
+      "actual_cols": [
+        "Middle_Name"
+        
+      ],
+      "db1_cols": [
+        "Middle Name"
+        
+      ],
+      "db2_cols": [
+        "Middle Name"
+      ],
+      "db1_scores": {
+        "Middle Name": 1.0
+      },
+      "db2_scores": {
+        "Middle Name": 1.0
+      },
+      "note": ""
+    },
+    {
+      "canonical": "net worth",
+      "norm_type": "text",
+      "actual_cols": [
+        "Net_Worth"
+      ],
+      "db1_cols": [
+        "Net Worth"
+      ],
+      "db2_cols": [],
+      "db1_scores": {
+        "Net Worth": 1.0
+      },
+      "db2_scores": {},
+      "note": ""
+    },
+    {
+      "canonical": "new or noteworthy",
+      "norm_type": "text",
+      "actual_cols": [
+        "New_Or_Noteworthy"
+      ],
+      "db1_cols": [
+        "New or Noteworthy"
+      ],
+      "db2_cols": [
+        "New Or Noteworthy"
+      ],
+      "db1_scores": {
+        "New or Noteworthy": 1.0
+      },
+      "db2_scores": {
+        "New Or Noteworthy": 1.0
+      },
+      "note": ""
+    },
+    {
+      "canonical": "nickname",
+      "norm_type": "text",
+      "actual_cols": [
+        "Nickname"
+      ],
+      "db1_cols": [
+        "Nickname"
+      ],
+      "db2_cols": [
+        "Nick Name"
+      ],
+      "db1_scores": {
+        "Nickname": 1.0
+      },
+      "db2_scores": {
+        "Nick Name": 0.941
+      },
+      "note": ""
+    },
+    {
+      "canonical": "note text",
+      "norm_type": "text",
+      "actual_cols": [
+        "Note_Text_1",
+        "Note_Text_2",
+        "Note_Text_3",
+        "Note_Text_4",
+        "Note_Text_5",
+        "Note_Text_6",
+        "Note_Text_7",
+        "Note_Text_8",
+        "Note_Text_9",
+        "Note_Text_10"
+      ],
+      "db1_cols": [
+        "Note Text (1)",
+        "Note Text (2)",
+        "Note Text (3)",
+        "Note Text (4)",
+        "Note Text (5)",
+        "Note Text (6)",
+        "Note Text (7)",
+        "Note Text (8)"
+      ],
+      "db2_cols": [],
+      "db1_scores": {
+        "Note Text (1)": 0.818,
+        "Note Text (2)": 0.818,
+        "Note Text (3)": 0.818,
+        "Note Text (4)": 0.818,
+        "Note Text (5)": 0.818,
+        "Note Text (6)": 0.818,
+        "Note Text (7)": 0.818,
+        "Note Text (8)": 0.818
+      },
+      "db2_scores": {},
+      "note": ""
+    },
+    {
+      "canonical": "note title",
+      "norm_type": "text",
+      "actual_cols": [
+        "Note_Title_1",
+        "Note_Title_2",
+        "Note_Title_3",
+        "Note_Title_4",
+        "Note_Title_5",
+        "Note_Title_6",
+        "Note_Title_7",
+        "Note_Title_8",
+        "Note_Title_9",
+        "Note_Title_10"
+      ],
+      "db1_cols": [
+        "Note Title (1)",
+        "Note Title (2)",
+        "Note Title (3)",
+        "Note Title (4)",
+        "Note Title (5)",
+        "Note Title (6)",
+        "Note Title (7)",
+        "Note Title (8)",
+        "Note Title (9)",
+        "Note Title (10)"
+      ],
+      "db2_cols": [],
+      "db1_scores": {
+        "Note Title (1)": 0.833,
+        "Note Title (2)": 0.833,
+        "Note Title (3)": 0.833,
+        "Note Title (4)": 0.833,
+        "Note Title (5)": 0.833,
+        "Note Title (6)": 0.833,
+        "Note Title (7)": 0.833,
+        "Note Title (8)": 0.833,
+        "Note Title (9)": 0.833,
+        "Note Title (10)": 0.8
+      },
+      "db2_scores": {},
+      "note": ""
+    },
+    {
+      "canonical": "office phone number",
+      "norm_type": "phone",
+      "actual_cols": [
+        "Office_Phone_Number"
+      ],
+      "db1_cols": [],
+      "db2_cols": [
+        "Office Phone Number",
+        "Office Phone Number Privacy"
+      ],
+      "db1_scores": {},
+      "db2_scores": {
+        "Office Phone Number": 1.0,
+        "Office Phone Number Privacy": 0.826
+      },
+      "note": ""
+    },
+    {
+      "canonical": "other companies owned",
+      "norm_type": "text",
+      "actual_cols": [
+        "Other_Companies_Owned"
+      ],
+      "db1_cols": [
+        "Other Companies Owned"
+      ],
+      "db2_cols": [],
+      "db1_scores": {
+        "Other Companies Owned": 1.0
+      },
+      "db2_scores": {},
+      "note": ""
+    },
+    {
+      "canonical": "other education campus",
+      "norm_type": "text",
+      "actual_cols": [
+        "Other_Education_Campus_1",
+        "Other_Education_Campus_2",
+        "Other_Education_Campus_3",
+        "Other_Education_Campus_4",
+        "Other_Education_Campus_5",
+        "Other_Education_Campus_6",
+        "Other_Education_Campus_7",
+        "Other_Education_Campus_8",
+        "Other_Education_Campus_9",
+        "Other_Education_Campus_10"
+      ],
+      "db1_cols": [],
+      "db2_cols": [],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "no need to consider as per kh sir"
+    },
+    {
+      "canonical": "other education department",
+      "norm_type": "text",
+      "actual_cols": [
+        "Other_Education_Department_1",
+        "Other_Education_Department_2",
+        "Other_Education_Department_3",
+        "Other_Education_Department_4",
+        "Other_Education_Department_5",
+        "Other_Education_Department_6",
+        "Other_Education_Department_7",
+        "Other_Education_Department_8",
+        "Other_Education_Department_9",
+        "Other_Education_Department_10"
+
+      ],
+      "db1_cols": ["Department (1)","Department (2)","Department (3)","Department (4)","Department (5)"],
+      "db2_cols": ["Department (1)","Department (2)","Department (3)","Department (4)","Department (5)","Department (1).1","Department (2).1","Department (3).1","Department (4).1","Department (5).1"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "db1 and db2 cols are manually mapped"
+
+    },
+    {
+      "canonical": "other education degree",
+      "norm_type": "text",
+      "actual_cols": [
+        "Other_Education_Degree_1",
+        
+        "Other_Education_Degree_2",
+        
+        "Other_Education_Degree_3",
+        
+        "Other_Education_Degree_4",
+        
+        "Other_Education_Degree_5",
+        
+        "Other_Education_Degree_6",
+        
+        "Other_Education_Degree_7",
+        
+        "Other_Education_Degree_8",
+        
+        "Other_Education_Degree_9",
+        
+        "Other_Education_Degree_10"
+        
+      ],
+      "db1_cols": ["Degree (1)","Degree (2)","Degree (3)","Degree (4)","Degree (5)"],
+      "db2_cols": ["Degree (1)","Degree (2)","Degree (3)","Degree (4)","Degree (5)"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "db1 and db2 cols are manually mapped"
+    },
+    {
+      "canonical": "other education entry year",
+      "norm_type": "number",
+      "actual_cols": [
+        "Other_Education_Entry_Year_1",
+        "Other_Education_Entry_Year_2",
+        "Other_Education_Entry_Year_3",
+        "Other_Education_Entry_Year_4",
+        "Other_Education_Entry_Year_5",
+        "Other_Education_Entry_Year_6",
+        "Other_Education_Entry_Year_7",
+        "Other_Education_Entry_Year_8",
+        "Other_Education_Entry_Year_9",
+        "Other_Education_Entry_Year_10"
+      ],
+      "db1_cols": ["Entry Year (1)","Entry Year (2)","Entry Year (3)","Entry Year (4)","Entry Year (5)"],
+      "db2_cols": ["Year of Joining (1)","Year of Joining (2)","Year of Joining (3)","Year of Joining (4)","Year of Joining (5)","Year of Joining (1).1","Year of Joining (2).1","Year of Joining (3).1","Year of Joining (4).1","Year of Joining (5).1"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "db1 and db2 cols are manually mapped"
+    },
+    {
+      "canonical": "other education field of study",
+      "norm_type": "text",
+      "actual_cols": [
+        "Other_Education_Field_of_Study_1",
+        "Other_Education_Field_of_Study_2",
+        "Other_Education_Field_of_Study_3",
+        "Other_Education_Field_of_Study_4",
+        "Other_Education_Field_of_Study_5",
+        "Other_Education_Field_of_Study_6",
+        "Other_Education_Field_of_Study_7",
+        "Other_Education_Field_of_Study_8",
+        "Other_Education_Field_of_Study_9",
+        "Other_Education_Field_of_Study_10"
+      ],
+      "db1_cols": [],
+      "db2_cols": ["Field of Study (1)","Field of Study (2)","Field of Study (3)","Field of Study (4)","Field of Study (5)"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "db2 manually mapped + no such column found in db1"
+    },
+    {
+      "canonical": "other education graduation year",
+      "norm_type": "number",
+      "actual_cols": [
+        "Other_Education_Graduation_Year_1",
+        "Other_Education_Graduation_Year_2",
+        "Other_Education_Graduation_Year_3",
+        "Other_Education_Graduation_Year_4",
+        "Other_Education_Graduation_Year_5",
+        "Other_Education_Graduation_Year_6",
+        "Other_Education_Graduation_Year_7",
+        "Other_Education_Graduation_Year_8",
+        "Other_Education_Graduation_Year_9",
+        "Other_Education_Graduation_Year_10"
+      ],
+      "db1_cols": ["Graduation Year (1)","Graduation Year (2)","Graduation Year (3)","Graduation Year (4)","Graduation Year (5)"],
+      "db2_cols": ["Year of Graduation (1)","Year of Graduation (2)","Year of Graduation (3)","Year of Graduation (4)","Year of Graduation (5)","Year of Graduation (1).1","Year of Graduation (2).1","Year of Graduation (3).1","Year of Graduation (4).1","Year of Graduation (5).1"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "manually mapped both db cols"
+    },
+    {
+      "canonical": "other education major",
+      "norm_type": "text",
+      "actual_cols": [
+        "Other_Education_Major_1",
+        
+        "Other_Education_Major_2",
+        
+        "Other_Education_Major_3",
+        
+        "Other_Education_Major_4",
+        
+        "Other_Education_Major_5",
+        
+        "Other_Education_Major_6",
+        
+        "Other_Education_Major_7",
+        
+        "Other_Education_Major_8",
+        
+        "Other_Education_Major_9",
+        
+        "Other_Education_Major_10"
+        
+      ],
+      "db1_cols": ["Major (1)","Major (2)","Major (3)","Major (4)","Major (5)"],
+      "db2_cols": ["Majors (1)","Majors (2)","Majors (3)","Majors (4)","Majors (5)","Majors (1).1","Majors (2).1","Majors (3).1","Majors (4).1","Majors (5).1"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "manually mapped both db cols"  
+    },
+    {
+      "canonical": "other education minor",
+      "norm_type": "text",
+      "actual_cols": [
+        "Other_Education_Minor_1",
+        "Other_Education_Minor_2",
+        "Other_Education_Minor_3",
+        "Other_Education_Minor_4",
+        "Other_Education_Minor_5",
+        "Other_Education_Minor_6",
+        "Other_Education_Minor_7",
+        "Other_Education_Minor_8",
+        "Other_Education_Minor_9",
+        "Other_Education_Minor_10"
+
+      ],
+      "db1_cols": ["Minor (1)","Minor (2)","Minor (3)","Minor (4)","Minor (5)"],
+      "db2_cols": ["Minors (1)","Minors (2)","Minors (3)","Minors (4)","Minors (5)","Minors (1).1","Minors (2).1","Minors (3).1","Minors (4).1","Minors (5).1"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "manually mapped both db cols"
+
+    },
+    {
+      "canonical": "other education university",
+      "norm_type": "text",
+      "actual_cols": [
+        "Other_Education_University_1",
+        "Other_Education_University_2",
+        "Other_Education_University_3",
+        "Other_Education_University_4",
+        "Other_Education_University_5",
+        "Other_Education_University_6",
+        "Other_Education_University_7",
+        "Other_Education_University_8",
+        "Other_Education_University_9",
+        "Other_Education_University_10"
+      ],
+      "db1_cols": [],
+      "db2_cols": ["Campus (1)","Campus (2)","Campus (3)","Campus (4)","Campus (5)","Campus (1).1","Campus (2).1","Campus (3).1","Campus (4).1","Campus (5).1"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "db2 cols manually mapped db1 not found"
+    },
+    {
+      "canonical": "other interest",
+      "norm_type": "text",
+      "actual_cols": [
+        "Other_Interest"
+      ],
+      "db1_cols": [
+        "Other Interest"
+      ],
+      "db2_cols": [],
+      "db1_scores": {
+        "Other Interest": 1.0
+      },
+      "db2_scores": {},
+      "note": ""
+    },
+    
+    
+    {
+      "canonical": "permanent verified",
+      "norm_type": "text",
+      "actual_cols": [
+        "Permanent_Verified"
+      ],
+      "db1_cols": [],
+      "db2_cols": [],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": ""
+    },
+    {
+      "canonical": "personal email",
+      "norm_type": "email",
+      "actual_cols": [
+        "Personal_Email"
+      ],
+      "db1_cols": ["Primary Email","Email 1","Email 2","Email 3","Email 4","Email 5","Email 6","Email 7","Email 8","Email 9","Email 10","Email 11","Email 12","Email 13","Email 14","Email 15","Email 16","Email 17","Email 18","Email 19","Email 20"],
+      "db2_cols": ["Address (1)","Address (2)","Address (3)","Address (4)","Address (5)"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": ""
+    },
+    {
+      "canonical": "personal email verification source",
+      "norm_type": "email",
+      "actual_cols": [
+        "Personal_Email_Verification_Source",
+        "Secondary_Email_Verification_Source"
+      ],
+      "db1_cols": [],
+      "db2_cols": [],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": ""
+    },
+    {
+       "canonical": "secondary email verified",
+      "norm_type": "email",
+      "actual_cols": ["Secondary_Email_Verified"],
+      "db1_cols": [],
+      "db2_cols": ["Is Verified (1)","Is Verified (2)","Is Verified (3)","Is Verified (4)","Is Verified (5)"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "db2 manually  mapped"
+
+    },
+    {
+      "canonical": "personal email verified",
+      "norm_type": "email",
+      "actual_cols": [
+        "Personal_Email_Verified"
+        
+      ],
+      "db1_cols": [],
+      "db2_cols": ["Is Verified (1)","Is Verified (2)","Is Verified (3)","Is Verified (4)","Is Verified (5)"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "db2 manually  mapped"
+    },
+    {
+      "canonical": "personal reflections yearbook",
+      "norm_type": "text",
+      "actual_cols": [
+        "Personal_Reflections_Yearbook"
+      ],
+      "db1_cols": [
+        "Personal Reflections For Yearbook Reunion"
+      ],
+      "db2_cols": [
+        "Personal Reflections For Yearbook Reunion"
+      ],
+      "db1_scores": {
+        "Personal Reflections For Yearbook Reunion": 0.829
+      },
+      "db2_scores": {
+        "Personal Reflections For Yearbook Reunion": 0.829
+      },
+      "note": ""
+    },
+    {
+      "canonical": "philanthropic interest areas",
+      "norm_type": "text",
+      "actual_cols": [
+        "Philanthropic_Interest_Areas"
+      ],
+      "db1_cols": [
+        "Philanthropic Interest Areas"
+      ],
+      "db2_cols": [],
+      "db1_scores": {
+        "Philanthropic Interest Areas": 1.0
+      },
+      "db2_scores": {},
+      "note": ""
+    },
+    {
+      "canonical": "preferences",
+      "norm_type": "text",
+      "actual_cols": [
+        "Preferences"
+      ],
+      "db1_cols": [],
+      "db2_cols": [
+        "Preferences"
+      ],
+      "db1_scores": {},
+      "db2_scores": {
+        "Preferences": 1.0
+      },
+      "note": ""
+    },
+    {
+      "canonical": "preferred email",
+      "norm_type": "email",
+      "actual_cols": [
+        "Preferred_Email"
+      ],
+      "db1_cols": ["Primary Email","Email 1","Email 2","Email 3","Email 4","Email 5","Email 6","Email 7","Email 8","Email 9","Email 10","Email 11","Email 12","Email 13","Email 14","Email 15","Email 16","Email 17","Email 18","Email 19","Email 20"],
+      "db2_cols": ["Address (1)","Address (2)","Address (3)","Address (4)","Address (5)"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "manually mapped both db cols"
+    },
+    {
+      "canonical": "preferred phone",
+      "norm_type": "phone",
+      "actual_cols": [
+        "Preferred_Phone"
+      ],
+      "db1_cols": ["Do Not Call","Phone 1","Phone 2","Phone 3","Phone 4","Phone 5","Phone 6","Phone 7","Phone 8","Phone 9","Phone 10","Phone 11","Phone 12","Phone 13","Phone 14","Phone 15","Phone 16","Phone 17","Phone 18","Phone 19","Phone 20"],
+      "db2_cols": ["Do Not Call","Home Phone Number","Home Phone Number Privacy","Mobile Phone Number","Mobile Phone Number Privacy","Office Phone Number","Office Phone Number Privacy"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "manually mapped both db cols"
+    },
+    {
+      "canonical": "primary chapter",
+      "norm_type": "text",
+      "actual_cols": [
+        "Primary_Chapter"
+      ],
+      "db1_cols": [],
+      "db2_cols": ["Chapter"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "db2 cols manually mapped db1 not found"
+    },
+    
+    {
+      "canonical": "primary mail delivery",
+      "norm_type": "email",
+      "actual_cols": [
+        "Primary_Mail_Delivery",
+        "Permanent_Mail_Delivery"
+      ],
+      "db1_cols": [],
+      "db2_cols": [],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "no columns found to be matched"
+    },
+    {
+      "canonical": "primary phone",
+      "norm_type": "phone",
+      "actual_cols": [
+        "Primary_Phone"
+      ],
+      "db1_cols": ["Do Not Call","Phone 1","Phone 2","Phone 3","Phone 4","Phone 5","Phone 6","Phone 7","Phone 8","Phone 9","Phone 10","Phone 11","Phone 12","Phone 13","Phone 14","Phone 15","Phone 16","Phone 17","Phone 18","Phone 19","Phone 20"],
+      "db2_cols": ["Do Not Call","Home Phone Number","Home Phone Number Privacy","Mobile Phone Number","Mobile Phone Number Privacy","Office Phone Number","Office Phone Number Privacy"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "manually mapped"
+    },
+    {
+      "canonical": "primary phone whatsapp",
+      "norm_type": "phone",
+      "actual_cols": [
+        "Primary_Phone_WhatsApp"
+      ],
+      "db1_cols": ["Do Not Call","Phone 1","Phone 2","Phone 3","Phone 4","Phone 5","Phone 6","Phone 7","Phone 8","Phone 9","Phone 10","Phone 11","Phone 12","Phone 13","Phone 14","Phone 15","Phone 16","Phone 17","Phone 18","Phone 19","Phone 20"],
+      "db2_cols": ["Do Not Call","Home Phone Number","Home Phone Number Privacy","Mobile Phone Number","Mobile Phone Number Privacy","Office Phone Number","Office Phone Number Privacy"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "manually mapped both db cols"
+    },
+    {
+      "canonical": "primary steward",
+      "norm_type": "text",
+      "actual_cols": [
+        "Primary_Steward"
+      ],
+      "db1_cols": [
+        "Primary Steward"
+      ],
+      "db2_cols": [],
+      "db1_scores": {
+        "Primary Steward": 1.0
+      },
+      "db2_scores": {},
+      "note": ""
+    },
+    {
+      "canonical": "Primary_Phone_Verification_Source",
+      "norm_type": "text",
+      "actual_cols":[
+        "Primary_Phone_Verification_Source"
+      ],
+      "db1_cols": ["Do Not Call","Phone 1","Phone 2","Phone 3","Phone 4","Phone 5","Phone 6","Phone 7","Phone 8","Phone 9","Phone 10","Phone 11","Phone 12","Phone 13","Phone 14","Phone 15","Phone 16","Phone 17","Phone 18","Phone 19","Phone 20"],
+      "db2_cols": ["Do Not Call","Home Phone Number","Home Phone Number Privacy","Mobile Phone Number","Mobile Phone Number Privacy","Office Phone Number","Office Phone Number Privacy"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "manually mapped both db cols"
+    },
+    {
+      "canonical": "primary verification source",
+      "norm_type": "text",
+      "actual_cols": [
+        "Primary_Verification_Source",
+        "Permanent_Verification_Source",
+        "Work_Email_Verification_Source",
+        "IITB_Email_Verification_Source",
+        "Primary_Phone_Verification_Source"
+      ],
+      "db1_cols": [],
+      "db2_cols": [],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": ""
+    },
+    {
+      "canonical": "primary verified",
+      "norm_type": "text",
+      "actual_cols": [
+        "Primary_Verified",
+        "Primary_Phone_Verified"
+      ],
+      "db1_cols": [],
+      "db2_cols": [],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": ""
+    },
+    
+    {
+      "canonical": "professional skills",
+      "norm_type": "text",
+      "actual_cols": [
+        "Professional_Skills"
+      ],
+      "db1_cols": [
+        "Professional Skills"
+      ],
+      "db2_cols": ["Skills"],
+      "db1_scores": {
+        "Professional Skills": 1.0
+      },
+       "db2_scores": {"Skills":1.0},
+      "note": "db2 manually  mapped"
+    },
+    {
+      "canonical": "profile id",
+      "norm_type": "text",
+      "actual_cols": [
+        "Profile_Id"
+      ],
+      "db1_cols": [],
+      "db2_cols": [
+        "Profile Id"
+      ],
+      "db1_scores": {},
+      "db2_scores": {
+        "Profile Id": 1.0
+      },
+      "note": ""
+    },
+    {
+      "canonical": "receipt number",
+      "norm_type": "number",
+      "actual_cols": [
+        "Receipt_Number"
+      ],
+      "db1_cols": [],
+      "db2_cols": [
+        "Receipt Number"
+      ],
+      "db1_scores": {},
+      "db2_scores": {
+        "Receipt Number": 1.0
+      },
+      "note": ""
+    },
+    {
+      "canonical": "registration type",
+      "norm_type": "text",
+      "actual_cols": [
+        "Registration_Type"
+      ],
+      "db1_cols": [],
+      "db2_cols": [
+        "Registration Type"
+      ],
+      "db1_scores": {},
+      "db2_scores": {
+        "Registration Type": 1.0
+      },
+      "note": ""
+    },
+    {
+      "canonical": "salutation",
+      "norm_type": "text",
+      "actual_cols": [
+        "Salutation"
+      ],
+      "db1_cols": [
+        "Salutation"
+      ],
+      "db2_cols": [],
+      "db1_scores": {
+        "Salutation": 1.0
+      },
+      "db2_scores": {},
+      "note": ""
+    },
+    {
+      "canonical": "secondary chapter",
+      "norm_type": "text",
+      "actual_cols": [
+        "Secondary_Chapter"
+      ],
+      "db1_cols": [],
+      "db2_cols": [],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "not found in any of the db"
+    },
+    {
+      "canonical": "secondary email",
+      "norm_type": "email",
+      "actual_cols": [
+        "Secondary_Email"
+      ],
+      "db1_cols": ["Primary Email","Email 1","Email 2","Email 3","Email 4","Email 5","Email 6","Email 7","Email 8","Email 9","Email 10","Email 11","Email 12","Email 13","Email 14","Email 15","Email 16","Email 17","Email 18","Email 19","Email 20"],
+      "db2_cols": ["Address (1)","Address (2)","Address (3)","Address (4)","Address (5)"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": ""
+    },
+    {
+      "canonical": "secondary phone",
+      "norm_type": "phone",
+      "actual_cols": [
+        "Secondary_Phone"
+      ],
+      "db1_cols": ["Do Not Call","Phone 1","Phone 2","Phone 3","Phone 4","Phone 5","Phone 6","Phone 7","Phone 8","Phone 9","Phone 10","Phone 11","Phone 12","Phone 13","Phone 14","Phone 15","Phone 16","Phone 17","Phone 18","Phone 19","Phone 20"],
+      "db2_cols": ["Do Not Call","Home Phone Number","Home Phone Number Privacy","Mobile Phone Number","Mobile Phone Number Privacy","Office Phone Number","Office Phone Number Privacy"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "manually mapped both db cols"
+    },
+    {
+      "canonical": "secondary phone verification source",
+      "norm_type": "phone",
+      "actual_cols": [
+        "Secondary_Phone_Verification_Source",
+        "Work_Phone_Verification_Source"
+      ],
+      "db1_cols": ["Do Not Call","Phone 1","Phone 2","Phone 3","Phone 4","Phone 5","Phone 6","Phone 7","Phone 8","Phone 9","Phone 10","Phone 11","Phone 12","Phone 13","Phone 14","Phone 15","Phone 16","Phone 17","Phone 18","Phone 19","Phone 20"],
+      "db2_cols": ["Do Not Call","Home Phone Number","Home Phone Number Privacy","Mobile Phone Number","Mobile Phone Number Privacy","Office Phone Number","Office Phone Number Privacy"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "manually mapped both db cols"
+    },
+    {
+      "canonical": "secondary phone verified",
+      "norm_type": "phone",
+      "actual_cols": [
+        "Secondary_Phone_Verified"
+      ],
+      "db1_cols": ["Do Not Call","Phone 1","Phone 2","Phone 3","Phone 4","Phone 5","Phone 6","Phone 7","Phone 8","Phone 9","Phone 10","Phone 11","Phone 12","Phone 13","Phone 14","Phone 15","Phone 16","Phone 17","Phone 18","Phone 19","Phone 20"],
+      "db2_cols": ["Do Not Call","Home Phone Number","Home Phone Number Privacy","Mobile Phone Number","Mobile Phone Number Privacy","Office Phone Number","Office Phone Number Privacy"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "manually mapped both db cols"
+    },
+    {
+      "canonical": "secondary phone whatsapp",
+      "norm_type": "phone",
+      "actual_cols": [
+        "Secondary_Phone_WhatsApp"
+      ],
+      "db1_cols": ["Do Not Call","Phone 1","Phone 2","Phone 3","Phone 4","Phone 5","Phone 6","Phone 7","Phone 8","Phone 9","Phone 10","Phone 11","Phone 12","Phone 13","Phone 14","Phone 15","Phone 16","Phone 17","Phone 18","Phone 19","Phone 20"],
+      "db2_cols": ["Do Not Call","Home Phone Number","Home Phone Number Privacy","Mobile Phone Number","Mobile Phone Number Privacy","Office Phone Number","Office Phone Number Privacy"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": ""
+    },
+    {
+      "canonical": "secondary steward",
+      "norm_type": "text",
+      "actual_cols": [
+        "Secondary_Steward"
+      ],
+      "db1_cols": [
+        "Secondary Steward"
+      ],
+      "db2_cols": [],
+      "db1_scores": {
+        "Secondary Steward": 1.0
+      },
+      "db2_scores": {},
+      "note": ""
+    },
+    {
+      "canonical": "special needs",
+      "norm_type": "text",
+      "actual_cols": [
+        "Special_Needs"
+      ],
+      "db1_cols": [],
+      "db2_cols": [],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": ""
+    },
+    {
+      "canonical": "stewardship category",
+      "norm_type": "text",
+      "actual_cols": [
+        "Stewardship_Category"
+      ],
+      "db1_cols": [
+        "Stewardship Category"
+      ],
+      "db2_cols": [],
+      "db1_scores": {
+        "Stewardship Category": 1.0
+      },
+      "db2_scores": {},
+      "note": ""
+    },
+    {
+      "canonical": "t shirt size",
+      "norm_type": "text",
+      "actual_cols": [
+        "T_Shirt_Size"
+      ],
+      "db1_cols": [
+        "T-Shirt Size"
+      ],
+      "db2_cols": [],
+      "db1_scores": {
+        "T-Shirt Size": 1.0
+      },
+      "db2_scores": {},
+      "note": ""
+    },
+    {
+      "canonical": "twitter",
+      "norm_type": "text",
+      "actual_cols": [
+        "Twitter"
+      ],
+      "db1_cols": [
+        "Twitter"
+      ],
+      "db2_cols": ["X (Formerly Twitter) Url"],
+      "db1_scores": {
+        "Twitter": 1.0
+      },
+      "db2_scores": {"X (Formerly Twitter) Url":1.0},
+      "note": "db2 manually  mapped"
+    },
+    {
+      "canonical": "validated by admin",
+      "norm_type": "text",
+      "actual_cols": [
+        "Validated_By_Admin"
+      ],
+      "db1_cols": [],
+      "db2_cols": [
+        "Validated By Admin",
+        "Validated By Admin.1"
+      ],
+      "db1_scores": {},
+      "db2_scores": {
+        "Validated By Admin": 1.0,
+        "Validated By Admin.1": 1.0
+      },
+      "note": ""
+    },
+    {
+      "canonical": "volunteering",
+      "norm_type": "text",
+      "actual_cols": [
+        "Volunteering"
+      ],
+      "db1_cols": [],
+      "db2_cols": [],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": ""
+    },
+    {
+      "canonical": "website",
+      "norm_type": "url",
+      "actual_cols": [
+        "Website"
+      ],
+      "db1_cols": [
+        "Website"
+      ],
+      "db2_cols": ["Website Url"],
+      "db1_scores": {
+        "Website": 1.0
+      },
+      "db2_scores": {"Website Url":1.0},
+      "note": "db2 manually  mapped"  
+    },
+    {
+      "canonical": "work email",
+      "norm_type": "email",
+      "actual_cols": [
+        "Work_Email"
+      ],
+      "db1_cols": ["Primary Email","Email 1","Email 2","Email 3","Email 4","Email 5","Email 6","Email 7","Email 8","Email 9","Email 10","Email 11","Email 12","Email 13","Email 14","Email 15","Email 16","Email 17","Email 18","Email 19","Email 20"],
+      "db2_cols": ["Address (1)","Address (2)","Address (3)","Address (4)","Address (5)"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": ""
+    },
+    {
+      "canonical": "work email verified",
+      "norm_type": "email",
+      "actual_cols": [
+        "Work_Email_Verified"
+      ],
+      "db1_cols": ["Primary Email","Email 1","Email 2","Email 3","Email 4","Email 5","Email 6","Email 7","Email 8","Email 9","Email 10","Email 11","Email 12","Email 13","Email 14","Email 15","Email 16","Email 17","Email 18","Email 19","Email 20"],
+      "db2_cols": ["Address (1)","Address (2)","Address (3)","Address (4)","Address (5)"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": ""
+    },
+    {
+      "canonical": "work phone",
+      "norm_type": "phone",
+      "actual_cols": [
+        "Work_Phone"
+      ],
+      "db1_cols": ["Do Not Call","Phone 1","Phone 2","Phone 3","Phone 4","Phone 5","Phone 6","Phone 7","Phone 8","Phone 9","Phone 10","Phone 11","Phone 12","Phone 13","Phone 14","Phone 15","Phone 16","Phone 17","Phone 18","Phone 19","Phone 20"],
+      "db2_cols": ["Do Not Call","Home Phone Number","Home Phone Number Privacy","Mobile Phone Number","Mobile Phone Number Privacy","Office Phone Number","Office Phone Number Privacy"],
+      "db1_scores": {},
+      "db2_scores": {
+      },
+      "note": "manually mapped both db cols"
+    },
+    {
+      "canonical": "work phone verified",
+      "norm_type": "phone",
+      "actual_cols": [
+        "Work_Phone_Verified"
+      ],
+      "db1_cols": ["Do Not Call","Phone 1","Phone 2","Phone 3","Phone 4","Phone 5","Phone 6","Phone 7","Phone 8","Phone 9","Phone 10","Phone 11","Phone 12","Phone 13","Phone 14","Phone 15","Phone 16","Phone 17","Phone 18","Phone 19","Phone 20"],
+      "db2_cols": ["Do Not Call","Home Phone Number","Home Phone Number Privacy","Mobile Phone Number","Mobile Phone Number Privacy","Office Phone Number","Office Phone Number Privacy"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "manually mapped both db cols"
+    },
+    {
+      "canonical": "work phone whatsapp",
+      "norm_type": "phone",
+      "actual_cols": [
+        "Work_Phone_WhatsApp"
+      ],
+      "db1_cols": ["Do Not Call","Phone 1","Phone 2","Phone 3","Phone 4","Phone 5","Phone 6","Phone 7","Phone 8","Phone 9","Phone 10","Phone 11","Phone 12","Phone 13","Phone 14","Phone 15","Phone 16","Phone 17","Phone 18","Phone 19","Phone 20"],
+      "db2_cols": ["Do Not Call","Home Phone Number","Home Phone Number Privacy","Mobile Phone Number","Mobile Phone Number Privacy","Office Phone Number","Office Phone Number Privacy"],
+      "db1_scores": {},
+      "db2_scores": {},
+      "note": "manually mapped both db cols"
+    }
+  ]
+}
