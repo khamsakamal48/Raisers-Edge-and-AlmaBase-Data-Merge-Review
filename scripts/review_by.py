@@ -1088,7 +1088,8 @@ def compute_address_group(
         db1_slot_col_lists,      # list of lists: [[slot1_street,slot1_city,...], ...]
         db2_component_cols,      # e.g. ["Home Address Line 1","Home Address City",...]
         actual_lookup, db1_key, db2_key,
-        label: str               # "primary" or "permanent"
+        label: str,              # "primary" or "permanent"
+        db2_extra_component_cols=None,  # optional 2nd DB2 set, e.g. Permanent
     ) -> dict:
     """
     Build a combined address block for one address group (primary or permanent).
@@ -1229,28 +1230,61 @@ def compute_address_group(
     fpct_db1     = round(100 * nb_true_db1 / filled_in_actual, 1) if filled_in_actual else 0.0
 
     # ── DB2 ───────────────────────────────────────────────────────────────────
-    existing_db2 = [c for c in db2_component_cols if c in db2_df.columns]
-    if existing_db2:
+    # DB2 may store an address in more than one place (e.g. Almabase keeps a
+    # clean split under "Home Address *" but ALSO a free-text copy under
+    # "Permanent Address"). The actual primary address sometimes matches one but
+    # not the other, so we score the actual value against EACH available DB2
+    # component set and keep, per row, the best-scoring set. This rescues cases
+    # where Home is a clean split (low token overlap) yet Permanent holds a
+    # near-verbatim copy of the actual blob.
+    db2_component_sets = [db2_component_cols]
+    if db2_extra_component_cols:
+        db2_component_sets.append(db2_extra_component_cols)
+
+    cand_raws, cand_norms, cand_scores, cand_colours, cand_diffs = [], [], [], [], []
+    for comp_set in db2_component_sets:
+        existing_db2 = [c for c in comp_set if c in db2_df.columns]
+        if not existing_db2:
+            continue
         db2_parts = []
         for dc in existing_db2:
             _m = dict(zip(db2_key, db2_df[dc].astype(str).str.strip()))
             lv = actual_lookup["db2"].apply(lambda k: _multi_key_lookup(k, _m))
             db2_parts.append(lv)
 
-        db2_raw = pd.Series(
+        c_raw = pd.Series(
             [" ".join(p for p in parts if p and p.lower() not in _EMPTY_TOKENS)
              for parts in zip(*[s.tolist() for s in db2_parts])],
             index=idx
         )
-        db2_blank = _is_blank(db2_raw)
-        db2_norm  = pd.Series(
+        c_blank = _is_blank(c_raw)
+        c_norm  = pd.Series(
             [combine_and_normalize([p.iloc[i] for p in db2_parts]) for i in range(n)],
             index=idx
         )
-        score_db2, colour_db2, diff_db2 = _score_and_diff(
-            actual_norm.tolist(), db2_norm.tolist(),
-            actual_blank.tolist(), db2_blank.tolist()
+        c_score, c_colour, c_diff = _score_and_diff(
+            actual_norm.tolist(), c_norm.tolist(),
+            actual_blank.tolist(), c_blank.tolist()
         )
+        cand_raws.append(c_raw.tolist());     cand_norms.append(c_norm.tolist())
+        cand_scores.append(c_score.tolist()); cand_colours.append(c_colour.tolist())
+        cand_diffs.append(c_diff.tolist())
+
+    if cand_scores:
+        # Per row, keep the DB2 component set with the highest similarity score.
+        k = len(cand_scores)
+        raw_l, norm_l, score_l, colour_l, diff_l = [], [], [], [], []
+        for i in range(n):
+            best_j = max(range(k), key=lambda j: cand_scores[j][i])
+            raw_l.append(cand_raws[best_j][i]);     norm_l.append(cand_norms[best_j][i])
+            score_l.append(cand_scores[best_j][i]);  colour_l.append(cand_colours[best_j][i])
+            diff_l.append(cand_diffs[best_j][i])
+        db2_raw    = pd.Series(raw_l, index=idx)
+        db2_blank  = _is_blank(db2_raw)
+        db2_norm   = pd.Series(norm_l, index=idx)
+        score_db2  = pd.Series(score_l, index=idx)
+        colour_db2 = pd.Series(colour_l, index=idx)
+        diff_db2   = pd.Series(diff_l, index=idx)
     else:
         db2_raw    = pd.Series([""] * n, index=idx)
         db2_blank  = pd.Series([True] * n, index=idx)
@@ -2707,7 +2741,8 @@ def main():
             DB2_HOME_COMPONENTS,
             {"db1": actual_db1_lookup, "db2": actual_db2_lookup},
             db1_key, db2_key,
-            label="primary"
+            label="primary",
+            db2_extra_component_cols=DB2_PERMANENT_COMPONENTS,
         )
         addr_groups.append(ag_primary)
         print(f"    DB1 match%={ag_primary['stats_db1']['match_pct']}%  "
