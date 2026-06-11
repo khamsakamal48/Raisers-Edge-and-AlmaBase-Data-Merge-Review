@@ -456,17 +456,37 @@ def _tok(s: str) -> set:
     return {t for t in s.split() if len(t) >= 2}
 
 
+# Minimum token count on the smaller address before its full containment in the
+# larger one earns containment credit. Stops tiny stubs ("India India") from
+# scoring GREEN against any address that happens to mention the same word.
+ADDR_CONTAINMENT_MIN_TOKENS = 4
+
 def address_similarity(na: str, nb: str) -> float:
     """
-    Jaccard similarity on word tokens + 0.25 boost if zip/pincode matches.
+    Token-overlap similarity + 0.25 boost if zip/pincode matches.
     Returns 0.0–1.0. Both blank → 1.0.
+
+    Score is the max of:
+      - Jaccard            = |A∩B| / |A∪B|         (symmetric overlap)
+      - Containment        = |A∩B| / min(|A|,|B|)  (subset coverage)
+    Containment only counts when the smaller address has at least
+    ADDR_CONTAINMENT_MIN_TOKENS tokens. This rescues the common case where one
+    DB stores only a street line while the actual blob also carries
+    city/state/country/zip: the DB address is fully contained in the actual one,
+    so it should score high instead of being penalised by the longer union.
     """
     if not na and not nb: return 1.0
     if not na or not nb:  return 0.0
     ta, tb = _tok(na), _tok(nb)
     if not ta and not tb: return 1.0
     if not ta or not tb:  return 0.0
-    score = len(ta & tb) / len(ta | tb)
+    inter = len(ta & tb)
+    jaccard = inter / len(ta | tb)
+    score = jaccard
+    smaller = min(len(ta), len(tb))
+    if smaller >= ADDR_CONTAINMENT_MIN_TOKENS:
+        containment = inter / smaller
+        score = max(score, containment)
     pa = set(re.findall(r'\b\d{5,6}\b', na))
     pb = set(re.findall(r'\b\d{5,6}\b', nb))
     if pa and pb and (pa & pb):
